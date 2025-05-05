@@ -13,11 +13,12 @@ require_once __DIR__ . '/../logger.php';
 try {
     $pdo = DBConnection::getInstance();
 
-    $stmt = $pdo->query("
+    $stmt = $pdo->prepare("
         SELECT ip_address, hit_count
         FROM banner_stats
         ORDER BY hit_count DESC
     ");
+    $stmt->execute();
     $entries = $stmt->fetchAll();
     $totalHosts = count($entries);
     $totalHits  = 0;

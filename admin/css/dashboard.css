@@ -1,0 +1,40 @@
+.stat-container {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #b5c8da;
+    color: #fff;
+}
+
+.logout {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logout a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: #e7f0f8;
+}
